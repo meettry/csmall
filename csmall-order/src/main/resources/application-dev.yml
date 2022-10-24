@@ -1,6 +1,6 @@
 spring:
   application:
-    name: nacos-cart # 定义当前服务名称
+    name: nacos-order # 定义当前服务名称
   cloud:
     nacos:
       discovery:

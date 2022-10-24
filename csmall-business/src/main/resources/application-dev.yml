@@ -7,3 +7,4 @@ spring:
       discovery:
         #配置nacos的位置,用于提交当前项目的信息
         server-addr: localhost:8848
+
