@@ -19,6 +19,8 @@
     <modules>
         <module>csmall-stock</module>
         <module>csmall-commons</module>
+        <module>csmall-business</module>
+        <module>csmall-cart</module>
     </modules>
     <!--声明府项目中定义的版本号,(这些内容本质上是变量的声明)-->
     <properties>
@@ -237,9 +239,11 @@
     </dependencyManagement>
 
     <dependencies>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
+
     </dependencies>
 </project>
