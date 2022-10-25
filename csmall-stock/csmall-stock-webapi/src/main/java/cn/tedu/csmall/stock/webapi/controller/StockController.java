@@ -1,8 +1,8 @@
-package cn.tedu.csmall.stock.controller;
+package cn.tedu.csmall.stock.webapi.controller;
 
 import cn.tedu.csmall.commons.pojo.stock.dto.StockReduceCountDTO;
 import cn.tedu.csmall.commons.restful.JsonResult;
-import cn.tedu.csmall.stock.service.IStockService;
+import cn.tedu.csmall.stock.webapi.service.IStockService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

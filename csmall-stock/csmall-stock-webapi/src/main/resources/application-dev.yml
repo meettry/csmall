@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: nacos-stock # 定义当前服务名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 # 指定正在运行的Nacos服务器的位置
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/csmall_db?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: root
+    password: 123456
+
+#配置SLF4j日志的显示级别
+logging:
+  level:
+    cn.tedu.csmall.stock: trace
+
+dubbo:
+  protocol:
+    port: -1
+    name: dubbo
+  registry:
+    address: nacos://localhost:8848
