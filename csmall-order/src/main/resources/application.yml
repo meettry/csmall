@@ -1,24 +1,24 @@
 
 server:
   port: 20002
-#¹«¹²ÅäÖÃ
+#å…¬å…±é…ç½®
 mybatis:
   configuration:
     cache-enabled: false
     map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 knife4j:
-  # ¿ªÆôÔöÇ¿ÅäÖÃ
+  # å¼€å¯å¢å¼ºé…ç½®
   enable: true
-  # Éú²ú»·¾³ÆÁ±Î£¬¿ªÆô½«½ûÖ¹·ÃÎÊÔÚÏßAPIÎÄµµ
+  # ç”Ÿäº§ç¯å¢ƒå±è”½ï¼Œå¼€å¯å°†ç¦æ­¢è®¿é—®åœ¨çº¿APIæ–‡æ¡£
   production: false
-  # BasicÈÏÖ¤¹¦ÄÜ£¬¼´ÊÇ·ñĞèÒªÍ¨¹ıÓÃ»§Ãû¡¢ÃÜÂëÑéÖ¤ºó²Å¿ÉÒÔ·ÃÎÊÔÚÏßAPIÎÄµµ
+  # Basicè®¤è¯åŠŸèƒ½ï¼Œå³æ˜¯å¦éœ€è¦é€šè¿‡ç”¨æˆ·åã€å¯†ç éªŒè¯åæ‰å¯ä»¥è®¿é—®åœ¨çº¿APIæ–‡æ¡£
   basic:
-    # ÊÇ·ñ¿ªÆôBasicÈÏÖ¤
+    # æ˜¯å¦å¼€å¯Basicè®¤è¯
     enable: false
-    # ÓÃ»§Ãû£¬Èç¹û¿ªÆôBasicÈÏÖ¤È´Î´ÅäÖÃÓÃ»§ÃûÓëÃÜÂë£¬Ä¬ÈÏÊÇ£ºadmin/123321
+    # ç”¨æˆ·åï¼Œå¦‚æœå¼€å¯Basicè®¤è¯å´æœªé…ç½®ç”¨æˆ·åä¸å¯†ç ï¼Œé»˜è®¤æ˜¯ï¼šadmin/123321
     username: root
-    # ÃÜÂë
+    # å¯†ç 
     password: 123456
 spring:
   profiles:

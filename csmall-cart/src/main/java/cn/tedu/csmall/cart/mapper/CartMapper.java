@@ -19,5 +19,5 @@ public interface CartMapper {
 
     // 删除购物车
     @Delete("delete from cart_tbl where user_id=#{userId} and commodity_code=#{commodityCode}")
-    int deleteCartNyUserIdAndCommodityCode(@Param("userId")String userId,@Param("commodityCode")String commodityCode);
+    int deleteCartByUserIdAndCommodityCode(@Param("userId")String userId,@Param("commodityCode")String commodityCode);
 }

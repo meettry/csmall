@@ -45,7 +45,7 @@ public class Knife4JConfiguration {
     /**
      * 简介
      */
-    private String description = "构建基础stock-web项目,实现减少库存功能";
+    private String description = "构建基础stock-web项目,实现库存管理";
     /**
      * 服务条款URL
      */
