@@ -1,9 +1,10 @@
 package cn.tedu.csmall.stock.webapi.service.impl;
 
 import cn.tedu.csmall.commons.pojo.stock.dto.StockReduceCountDTO;
+import cn.tedu.csmall.stock.service.IStockService;
 import cn.tedu.csmall.stock.webapi.mapper.StockMapper;
-import cn.tedu.csmall.stock.webapi.service.IStockService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
  * @author Meettry
  * @date 2022/10/24 15:58
  */
+@DubboService
 @Service
 @Slf4j
 public class StockServiceImpl implements IStockService {

@@ -42,6 +42,11 @@
             <artifactId>csmall-commons</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>cn.tedu</groupId>
+            <artifactId>csmall-stock-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!--在线api文档-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
@@ -52,6 +57,7 @@
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
+        <!--Dubbo依赖-->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-dubbo</artifactId>

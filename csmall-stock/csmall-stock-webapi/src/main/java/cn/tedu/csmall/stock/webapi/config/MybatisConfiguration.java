@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Slf4j
 @Configuration
-@MapperScan("cn.tedu.csmall.stock.mapper")
+@MapperScan("cn.tedu.csmall.stock.webapi.mapper")
 public class MybatisConfiguration {
     public MybatisConfiguration() {
         log.debug("stock模块正在创建Mybatis配置类");
