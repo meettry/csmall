@@ -11,23 +11,18 @@ spring:
     username: root
     password: 123456
 
-
-#配置SLF4j日志的显示级别
-logging:
-  level:
-    cn.tedu.csmall.cart: trace
-
 dubbo:
   protocol:
-    # port设置为-1 表示当前dubbo框架使用的端口自动寻找
-    # 使用端口的规则是从20880开始寻找可用端口,如果当前端口号占用,就继续加1来使用,直到找到可用的为止
     port: -1
-    # 设置连接的名称,一般固定为dubbo即可
     name: dubbo
   registry:
-    # 指定当前Dubbo服务注册中心的类型和位置
     address: nacos://localhost:8848
   consumer:
-    # 当前项目启动时,是否检查当前项目需要的所有Dubbo服务是否可用
-    # 设置为false,表示不检查
     check: false
+seata:
+  tx-service-group: csmall_group  # 定义事务的分组,一般是以项目为单位的,方便与其它项目区分
+  service:
+    vgroup-mapping:
+      csmall_group: default     # csmall_group分组的配置,default会默认配置Seata
+    grouplist:
+      default: localhost:8091   # 配置Seata服务器的地址和端口号

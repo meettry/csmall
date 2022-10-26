@@ -5,6 +5,11 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848 # 指定正在运行的Nacos服务器的位置
+    sentinel:
+      transport:
+        dashboard: localhost:8080 # 配置Sentinel提供的运行状态仪表台的位置
+        # 执行限流的端口号,每个项目需要设置不同的端口号,例如cart模块可以设置为8722
+        port: 8721
 
   datasource:
     url: jdbc:mysql://localhost:3306/csmall_db?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
@@ -30,3 +35,11 @@ dubbo:
     # 当前项目启动时,是否检查当前项目需要的所有Dubbo服务是否可用
     # 设置为false,表示不检查
     check: false
+
+seata:
+  tx-service-group: csmall_group  # 定义事务的分组,一般是以项目为单位的,方便与其它项目区分
+  service:
+    vgroup-mapping:
+      csmall_group: default     # csmall_group分组的配置,default会默认配置Seata
+    grouplist:
+      default: localhost:8091   # 配置Seata服务器的地址和端口号

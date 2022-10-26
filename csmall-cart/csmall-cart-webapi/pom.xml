@@ -16,6 +16,17 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <!--all-common依赖-->
+        <dependency>
+            <groupId>cn.tedu</groupId>
+            <artifactId>csmall-commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.tedu</groupId>
+            <artifactId>csmall-cart-service</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!--web实例-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -36,17 +47,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <!--all-common依赖-->
-        <dependency>
-            <groupId>cn.tedu</groupId>
-            <artifactId>csmall-commons</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.tedu</groupId>
-            <artifactId>csmall-cart-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
         <!--在线api文档-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
@@ -61,6 +62,20 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-dubbo</artifactId>
+        </dependency>
+        <!--   Seata和SpringBoot整合依赖     -->
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-spring-boot-starter</artifactId>
+        </dependency>
+        <!--  Seata 完成分布式事务的两个相关依赖(Seata会自动使用其中的资源)  -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
         </dependency>
     </dependencies>
 
