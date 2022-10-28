@@ -23,6 +23,7 @@
         <module>csmall-cart</module>
         <module>csmall-order</module>
         <module>csmall-gateway</module>
+        <module>search</module>
     </modules>
     <!--声明府项目中定义的版本号,(这些内容本质上是变量的声明)-->
     <properties>
